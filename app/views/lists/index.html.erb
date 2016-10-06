@@ -1,22 +1,24 @@
 <section class="todoapp">
-      <header class="header">
+    <header class="header">
         <h1>TODO lists</h1>
         <input class="new-todo" placeholder="Make a new list" autofocus="">
-      </header>
+    </header>
 
-      <section class="main">
+    <section class="main">
         <ul class="todo-list">
-          <%@lists.each do |list| %>
-          <li>
-            <div class="view">              
-              <label> <%= link_to list.name, list_path(list) %> </a></label>
+            <%@lists.each do |list| %>
+            <li>
+                <div class="view">
+                    <label>
+                        <%= link_to list.name, list_path(list) %>
+                    </a>
+                </label>
             </div>
-          </li>
-          <%end %>
-        </ul>
+        </li>
+        <%end %>
+    </ul>
 
-      </section>
+</section>
 
-      <footer class="footer">
-      </footer>
-    </section>
+<footer class="footer"></footer>
+</section>
