@@ -6,10 +6,15 @@
 
     <section class="main">
         <ul class="todo-list">
+          <% @list.items.each do |item| %>
+
 
             <li>
                 <div class="view"></div>
+                  <label> <%= item.description %> </label>
             </li>
+
+            <% end %>
 
         </ul>
 
